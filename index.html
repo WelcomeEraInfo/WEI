@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+div {text-align:center;}
+</style>
+<script>
+function startTime(){
+	var today=new Date();
+	var h=today.getHours();
+	var m=today.getMinutes();
+	var s=today.getSeconds();
+	m=checkTime(m);
+	s=checkTime(s);
+	document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+	t=setTimeout(function(){startTime()},500);
+}
+function checkTime(i){
+	if (i<10){
+		i="0" + i;
+	}
+	return i;
+}
+</script>
+</head> 
+<body onload="startTime()">
+
+<div id="txt"style="font-size:1500%"></div><h1 style="font-size:250%;color:red">Very Good</h1><p style="color:blue">This Is a Perfect Time.</p><h6><ins style="float:right;color:green">和河合怀化海，雾微纹为唯未</ins></h6><img src="https://i.postimg.cc/5yVQYYwV/WEI.jpg" width="50" height="50" /><div style="font-size:50%;clear:both;text-align:center;">
+
+版权 © HuangWei</div>
+	
+</body>
+</html>
