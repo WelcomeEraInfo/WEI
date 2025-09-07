@@ -2,3 +2,5 @@
 	- 能快捷选择仓库里的文件运行 | Can quickly select the files in the repository to run
 - BMI : 身体质量指数公式 | Body Mass Index Formula
 - WanQuanPingFang : 完全平方公式 | Perfect Square Formula
+- Text : 快捷文本记录 | Quick Text Logging
+    - 能快捷记录输入文本，支持无限换行，记录文件使用 md 格式，输入 ok 结束输入并保存，文件储存在运行的当前目录 | Can quickly record input text, support infinite line wrapping, record file usage md Formats, entering ok end and save, the file is stored in the current directory where it is running.
