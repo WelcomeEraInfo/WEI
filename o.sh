@@ -6,4 +6,5 @@ for i in {1..10}; do
     done
 done
 printf "\b 启动！\n"
-ping -c 3 bing.com
+printf "#include <reg51.h>\n"
+printf "sbit key = P3^0;"
