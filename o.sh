@@ -1,7 +1,7 @@
 echo "请选择要执行的操作："
 echo "1) 查看今天吃什么（吃饭菜单）"
 echo "2) ping bing.com"
-read -p "请输入数字 (1 或 2): " choice
+read -p "请输入数字 (1 或 2): " choice < /dev/tty
 
 case $choice in
     1)
