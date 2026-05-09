@@ -11,6 +11,6 @@ printf "#include <reg51.h>\n"
 sleep 0.1
 printf "sbit key = P3^0;\n"
 sleep 0.1
-printf "void"
+printf "void delay"
 sleep 0.1
 printf "\n"
