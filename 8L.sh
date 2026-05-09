@@ -9,7 +9,7 @@ done
 printf "\b 启动！\n"
 sleep 0.1
 for ((i=0; i<=100; i+=1)); do
-    echo -ne "从仓库提取中：$i%\r\003[K"
+    echo -ne "从仓库提取中：$i%\r\033[K"
     sleep 0.1
 done
 printf "\n"
@@ -29,11 +29,11 @@ printf "sbit key = P3^0;\n"
 sleep 0.1
 printf "void delay(unsigned int ms)\n"
 sleep 0.1
-printf "{"
+printf "{\n"
 sleep 0.1
 printf "    unsigned int i;\n"
 sleep 0.1
-printf "    for(i=0;i<ms;i++)\n"
+printf "    for(i=0;i<ms;i++);\n"
 sleep 0.1
 printf "}\n"
 sleep 0.1
@@ -133,7 +133,7 @@ printf "                w&=0xff;\n"
 sleep 0.1
 printf "            }   break;\n"
 sleep 0.1
-printf "            default.P1 = 0xff;\n"
+printf "            default: P1 = 0xff;\n"
 sleep 0.1
 printf "        }\n"
 sleep 0.1
