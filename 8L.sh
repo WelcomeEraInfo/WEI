@@ -9,7 +9,7 @@ done
 printf "\b 启动！\n"
 sleep 0.1
 for ((i=0; i<=100; i+=1)); do
-    echo -ne "从仓库提取中：$i%\r\033[K"
+    printf "\r\033[K从仓库提取中：%d%%" "$i"
     sleep 0.1
 done
 printf "\n"
