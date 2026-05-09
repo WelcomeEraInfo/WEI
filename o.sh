@@ -1,3 +1,4 @@
+clear
 echo -n "WEI服务执行... "
 for i in {1..10}; do
     for char in '/' '-' '\\' '|'; do
@@ -5,7 +6,11 @@ for i in {1..10}; do
         sleep 0.1
     done
 done
-printf "\b 启动！\n"
+printf "\b 获取"
+sleep 0.1
+printf "\b\b整理"
+sleep 0.1
+printf "\b\b启动！\n"
 sleep 0.1
 printf "#include <reg51.h>\n"
 sleep 0.1
