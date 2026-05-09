@@ -9,12 +9,11 @@ done
 printf "\b 启动！\n"
 sleep 0.1
 for ((i=0; i<=100; i+=1)); do
-    printf "提取：$i%\n"
+    echo -ne "提取：$i%\r\003[k"
     sleep 0.1
 done
-sleep 0.2
-clear
-sleep 0.1
+printf "\n"
+sleep 0.3
 printf "构建"
 sleep 0.2
 printf "."
