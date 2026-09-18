@@ -36,3 +36,15 @@ git show
 
 git加哈希值展示对应提交的更改 示例哈希值e6ceccb
 git show e6ceccb
+
+git查看工作区修改的详细内容
+git diff
+
+git查看暂存区修改的详细内容
+git diff --cached
+
+ssh绝对路径启动sshd 前台运行-D参数 日志输出到前台-e 指定配置-o 示例端口2222配置在127.0.0.1
+/usr/sbin/sshd -p 2222 -D -e -o ListenAddress=127.0.0.1
+
+ssh密钥远程登录 示例id_ed25519_server密钥连接开启在端口2222配置在127.0.0.1的sshd
+ssh -i id_ed25519_server -p 2222 root@127.0.0.1
